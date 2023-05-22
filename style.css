@@ -1,0 +1,10 @@
+body,
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: rgb(163, 161, 161)
+}
