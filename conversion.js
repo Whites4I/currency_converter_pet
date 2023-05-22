@@ -5,6 +5,7 @@ export const handleChange = ({ target: { value, name } }) => {
         ...state.pair,
         [name]: value
     }
+    console.log(state.pair)
 }
 
 export const handleInput = ({ target: { value, name } }) => {
@@ -13,19 +14,17 @@ export const handleInput = ({ target: { value, name } }) => {
 
 export const handleSubmit = async (e) => {
     e.preventDefault();
-
-    const { url, amount, pair: { from, to } } = state;
-    console.log(url)
     console.log(amount)
-    console.log(from)
-    console.log(to)
+    console.log(url)
+    console.log()
+    console.log()
+    const { url, amount, pair: { from, to } } = state;
     if (!amount || !from || !to) return;
 
     try {
         const response = await fetch(`${url}/pair/${from}/${to}`);
         const data = await response.json();
-        console.log(data)
     } catch (error) {
-        console.log(error)
+        console.log(error);
     }
 }
