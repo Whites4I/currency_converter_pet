@@ -8,3 +8,11 @@ html {
 body {
     background-color: rgb(163, 161, 161)
 }
+
+.overlay {
+    width: auto;
+    min-width: 30%;
+    padding: 2%;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 30px;
+}
