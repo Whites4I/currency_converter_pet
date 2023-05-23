@@ -24,7 +24,7 @@ const insertResults = ({
     results.innerHTML =
         `<div>
             <a>Value: ${baseCode} = ${state.amount}</a><br>
-            <a>Rate: ${targetCode} = ${rate}</a><br>
+            <a>Rate: ${baseCode}/${targetCode} = ${rate}</a><br>
             <a>Result: ${result} ${targetCode}</a><br>
             <a>Last update: ${time}</a><br>
         </div>`;
